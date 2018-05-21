@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="70512" started-at="2018-05-21T08:55:34Z" finished-at="2018-05-21T08:56:44Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="70512" started-at="2018-05-21T08:55:34Z" finished-at="2018-05-21T08:56:44Z">
+      <class name="Secnarios">
+        <test-method status="PASS" signature="dependencies()[pri:0, instance:Secnarios@3f49dace]" name="dependencies" is-config="true" duration-ms="28904" started-at="2018-05-21T08:55:34Z" finished-at="2018-05-21T08:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dependencies -->
+        <test-method status="PASS" signature="record()[pri:0, instance:Secnarios@3f49dace]" name="record" duration-ms="41583" started-at="2018-05-21T08:56:03Z" finished-at="2018-05-21T08:56:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- record -->
+      </class> <!-- Secnarios -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
