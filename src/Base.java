@@ -40,6 +40,11 @@ public void dependencies () throws MalformedURLException {
  		  
 }
 
+   	@AfterSuite
+   	public void report() throws Exception  {
+   		Xl.generateReport("D:\\TestResult","DubaiDriveTCs.xls");
+   		driver.quit();
+   	}
 
 }
 

@@ -6,6 +6,7 @@
       <class name="Secnarios">
         <methods>
           <include name="dependencies"/>
+          <include name="report"/>
           <include name="record"/>
         </methods>
       </class> <!-- Secnarios -->
