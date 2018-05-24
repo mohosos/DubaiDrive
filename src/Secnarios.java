@@ -1,4 +1,8 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.By.ById;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.MobileElement;
@@ -6,7 +10,7 @@ import io.appium.java_client.TouchAction;
 
 public class Secnarios extends Base {
 	@Test
-	public void record () {
+	public void record () throws InterruptedException {
 		
 		driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View/android.view.View[6]")).click();
 		//MobileElement e1 = (MobileElement) driver.findElementById("btnEn");
@@ -17,8 +21,11 @@ public class Secnarios extends Base {
 		e4.click();
 		MobileElement e5 = (MobileElement) driver.findElementById("saveButton");
 		e5.click();
+		
 		MobileElement e6 = (MobileElement) driver.findElementById("sidePanelHeaderActionBtn");
 		e6.click();
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.elementToBeClickable(By.id("sidePanelHeaderActionBtn"))) ;
 		//MobileElement e7 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[8]/android.view.View/android.view.View/android.view.View[2]/android.view.View[3]/android.view.View[3]/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[2]");
 		//e7.click();
 		//MobileElement e8 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[8]/android.view.View/android.view.View/android.view.View[2]/android.view.View[3]/android.view.View[3]/android.view.View[4]/android.view.View[2]/android.view.View/android.view.View[1]");
@@ -27,7 +34,7 @@ public class Secnarios extends Base {
 		//e9.click();
 		(new TouchAction(driver)).tap(291, 73).perform() ;
 		(new TouchAction(driver)).tap(291, 73).perform() ;
-		//(new TouchAction(driver)).tap(291, 73).perform() ;
+		(new TouchAction(driver)).tap(291, 73).perform() ;
 		MobileElement el0 = (MobileElement) driver.findElementById("loginTap");
 		el0.click();
 		(new TouchAction(driver)).tap(191, 308).perform() ;

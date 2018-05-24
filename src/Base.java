@@ -34,7 +34,7 @@ public void dependencies () throws MalformedURLException {
  		  capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
  		  capabilities.setCapability(MobileCapabilityType.VERSION, "7.0");
  		  capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.rta.driversandvehicles");
- 		  capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".Drivers_and_Vehicles");
+ 		  capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".Drivers_and_Vehicles"); //Drivers_and_Vehicles
  		  driver = new AndroidDriver<MobileElement> ( new URL ("http://0.0.0.0:4723/wd/hub") , capabilities) ;
  		  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
  		  
